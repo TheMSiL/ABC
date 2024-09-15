@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -12,7 +13,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	<link rel="stylesheet" href="./index.css">
-	<title>WEB</title>
+	<title>ABC PHOTOSHOOT</title>
 </head>
 
 <body>
@@ -20,7 +21,8 @@
 
 		<div class="header">
 			<div class="container flex">
-				<div class="logo">PROFESSIONAL <span>MARKETING</span> </div>
+				<div class="logo"><img src="./img/logo.png" alt="logo">
+				</div>
 				<nav>
 					<ul class="header_ul">
 						<li class="header_li"><a href="#about">about</a> </li>
@@ -34,8 +36,30 @@
 					<button class="header_btn">CONTACT</button>
 					<a href="tel:+19547014361" class="header_btn-second">CALL</a>
 				</div>
+				<div class="burger-menu" id="burgerMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</div>
 		</div>
+
+		<div class="overlay">
+			<nav class="header_nav-mob" id="navMenu">
+				<ul class="header_ul">
+					<li class="header_li"><a href="#about">about</a></li>
+					<li class="header_li"><a href="#videography">videography</a></li>
+					<li class="header_li"><a href="#goals">goals</a></li>
+					<li class="header_li"><a href="#reviews">reviews</a></li>
+					<li class="header_li"><a href="#services">services</a></li>
+					<div class="header_btns-mob">
+						<button class="header_btn">CONTACT</button>
+						<a href="tel:+19547014361" class="header_btn-second">CALL</a>
+					</div>
+				</ul>
+			</nav>
+		</div>
+
 
 		<div class="line"></div>
 
@@ -58,12 +82,62 @@
 				</div>
 			</div>
 
+			<div class="swiper-container swiper_main">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="main_nav-item">
+							<a href="#about"><img width="150" src="./img/main/about.png" alt=""></a>
+							<h5>About us</h5>
+							<p>Maximize your restaurant's potential with our expert marketing services. Check out the details</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_nav-item">
+							<a href="#partners"><img width="150" src="./img/main/goals.png" alt=""></a>
+							<h5>Our partners</h5>
+							<p>Discover the businesses that have trusted us with their growth. Join our satisfied partners and learn
+								how we
+								can help your establishment achieve success.</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_nav-item">
+							<a href="#videography"><img width="150" src="./img/main/video.PNG" alt=""></a>
+							<h5>Videography</h5>
+							<p>Professional photo and video services for your business and special events. Learn more about how we
+								create
+								captivating content that leaves a lasting impression.</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_nav-item">
+							<a href="#reviews"><img width="150" src="./img/main/reviews.png" alt=""></a>
+							<h5>Reviews</h5>
+							<p>Here you’ll find reviews from our clients, many of whom we've worked with for years. Want to see the
+								quality
+								of our services? Check out the reviews here.</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_nav-item">
+							<a href="#services"><img width="150" src="./img/main/services.png" alt=""></a>
+							<h5>Our services</h5>
+							<p>In this section, you can explore our list of services, each crafted with care for you. For more
+								detailed
+								information, read on.</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+
+
 			<div class="main_nav">
 				<div class="main_nav-item">
 					<a href="#about"><img width="150" src="./img/main/about.png" alt=""></a>
 					<h5>About us</h5>
 					<p>Maximize your restaurant's potential with our expert marketing services. Check out the details</p>
-
 				</div>
 				<div class="main_nav-item">
 					<a href="#partners"><img width="150" src="./img/main/goals.png" alt=""></a>
@@ -78,7 +152,6 @@
 					<p>Professional photo and video services for your business and special events.Learn more about how we create
 						captivating
 						content that leaves a lasting impression.</p>
-
 				</div>
 				<div class="main_nav-item">
 					<a href="#reviews"><img width="150" src="./img/main/reviews.png" alt=""></a>
@@ -86,7 +159,6 @@
 					<p>Here you’ll find reviews from our clients, many of whom we've worked with for years. Want to see the
 						quality of our
 						services? Check out the reviews here</p>
-
 				</div>
 				<div class="main_nav-item">
 					<a href="#services"><img width="150" src="./img/main/services.png" alt=""></a>
@@ -94,11 +166,9 @@
 					<p>In this section, you can explore our list of services, each crafted with care for you. For more detailed
 						information,
 						read on.</p>
-
 				</div>
 			</div>
-			<!-- <img class="left_img" src="./img/main/left_side.png">
-			<img class="right_img" src="./img/main/right_side.png"> -->
+
 		</main>
 
 		<section class="promo">
@@ -230,68 +300,161 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="review">
-							<p>Partnering with ABC Photoshoot has brought us amazing results. Thanks to their support, our restaurant
-								has
-								become a popular venue for parties, family gatherings, and celebrations. We've received numerous
-								positive reviews from
-								guests who praised the quality of service and the atmosphere of the place. The number of private events
-								has
-								significantly increased, and we're very grateful for the team's
-								professionalism and creative approach. It truly helped us elevate our restaurant's popularity to a whole
-								new level!</p>
-							<h4>WOK & WINE</h4>
+							<div class="left_side">
+								<div class="user_block">
+									<img class="user_logo" src="./img/reviews/1/1.svg">
+									<h4>WOK BY THE BEACH</h4>
+								</div>
+								<div class="stars">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+								</div>
+								<p>Partnering with ABC Photoshoot has brought us amazing results. Thanks to their support, our
+									restaurant has become a
+									popular venue for parties, family gatherings, and celebrations. We’ve received numerous positive
+									reviews from guests who
+									praised the quality of service and the atmosphere of the place. The number of private events has
+									significantly
+									increased, and we’re very grateful for the team’s professionalism and creative approach. It truly
+									helped us elevate our
+									restaurant’s popularity to a whole new level!</p>
+							</div>
+							<div class="right_side">
+
+								<div class="request">
+									<h5>THE REQUEST THEY CAME TO US WITH</h5>
+									<p>The client approached us with a problem: a lack of parties, family gatherings, and celebrations
+										being held at their
+										restaurant. Although the venue had all the necessary amenities for hosting events, visitors rarely
+										chose it for their
+										personal celebrations. This was negatively affecting the restaurant’s revenue and creating the
+										impression that it wasn’t
+										a popular spot for special occasions.</p>
+								</div>
+								<div>
+									<h5>WE SOLVED THIS THANKS TO</h5>
+									<p>We proposed a strategy focused on making the restaurant more attractive for hosting private events.
+										Our team developed a
+										series of initiatives, including the creation of special celebration packages that featured
+										photoshoots with
+										personalized postcards, branded with the restaurant’s logo and customized messages for guests. As a
+										result, the
+										restaurant began to be chosen more frequently for parties, family gatherings, and celebrations.</p>
+								</div>
+								<div class="reviews_img-cont">
+									<img src="./img/reviews/1/1.png">
+									<img src="./img/reviews/1/2.png">
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="review">
-							<p>The results exceeded all our expectations. Our guests love the idea—they're taking photos, sharing them
-								online on
-								Instagram and Facebook, and this has significantly boosted our positive reviews on Google. Thanks to
-								this service, we've
-								been able to create a warm, friendly atmosphere in the restaurant and attract new guests.</p>
-							<h4>SAILFISH
-								MARINA RESORT</h4>
+							<div class="left_side">
+								<div class="user_block">
+									<img class="user_logo" src="./img/reviews/1/1.svg">
+									<h4>WOK BY THE BEACH</h4>
+								</div>
+								<div class="stars">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+								</div>
+								<p>Partnering with ABC Photoshoot has brought us amazing results. Thanks to their support, our
+									restaurant has become a
+									popular venue for parties, family gatherings, and celebrations. We’ve received numerous positive
+									reviews from guests who
+									praised the quality of service and the atmosphere of the place. The number of private events has
+									significantly
+									increased, and we’re very grateful for the team’s professionalism and creative approach. It truly
+									helped us elevate our
+									restaurant’s popularity to a whole new level!</p>
+							</div>
+							<div class="right_side">
+					
+								<div class="request">
+									<h5>THE REQUEST THEY CAME TO US WITH</h5>
+									<p>The client approached us with a problem: a lack of parties, family gatherings, and celebrations
+										being held at their
+										restaurant. Although the venue had all the necessary amenities for hosting events, visitors rarely
+										chose it for their
+										personal celebrations. This was negatively affecting the restaurant’s revenue and creating the
+										impression that it wasn’t
+										a popular spot for special occasions.</p>
+								</div>
+								<div>
+									<h5>WE SOLVED THIS THANKS TO</h5>
+									<p>We proposed a strategy focused on making the restaurant more attractive for hosting private events.
+										Our team developed a
+										series of initiatives, including the creation of special celebration packages that featured
+										photoshoots with
+										personalized postcards, branded with the restaurant’s logo and customized messages for guests. As a
+										result, the
+										restaurant began to be chosen more frequently for parties, family gatherings, and celebrations.</p>
+								</div>
+								<div class="reviews_img-cont">
+									<img src="./img/reviews/1/1.png">
+									<img src="./img/reviews/1/2.png">
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="review">
-							<p>I really enjoyed the restaurant and the
-								photographer was great, very nice and did a great job creating very beautiful photos to help create
-								moments for us
-								to
-								remember and enjoy forever! I liked everything. I love everything. Do yourself a favor and try this
-								restaurant and
-								you
-								will understand why it is so popular!</p>
-							<h4>scrappymamas</h4>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="review">
-							<p>This young polite gentleman approached my husband and I asked to take a picture. Photos like these are
-								priceless and we
-								thanked him
-								accordingly. You are two drunken goats for our picture.</p>
-							<h4>Julie Holman</h4>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="review">
-							<p>
-								Lulu took our photos today and they were phenomenal! Thank you so much for taking the time
-								to make our photos special!
-								Food: 5/5 | Service: 5/5 | Atmosphere:
-								5/5</p>
-							<h4>Linda DiBenedetto</h4>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="review">
-							<p>
-								Alyssa is a great server, cheerful and friendly. Had the Mahi Ruben and it was excellent. Music was
-								great! The
-								photographer was nice and professional and loved the photos!</p>
-							<h4>Lancey Cunningham</h4>
+							<div class="left_side">
+								<div class="user_block">
+									<img class="user_logo" src="./img/reviews/1/1.svg">
+									<h4>WOK BY THE BEACH</h4>
+								</div>
+								<div class="stars">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+									<img src="./img/reviews/star.svg">
+								</div>
+								<p>Partnering with ABC Photoshoot has brought us amazing results. Thanks to their support, our
+									restaurant has become a
+									popular venue for parties, family gatherings, and celebrations. We’ve received numerous positive
+									reviews from guests who
+									praised the quality of service and the atmosphere of the place. The number of private events has
+									significantly
+									increased, and we’re very grateful for the team’s professionalism and creative approach. It truly
+									helped us elevate our
+									restaurant’s popularity to a whole new level!</p>
+							</div>
+							<div class="right_side">
+					
+								<div class="request">
+									<h5>THE REQUEST THEY CAME TO US WITH</h5>
+									<p>The client approached us with a problem: a lack of parties, family gatherings, and celebrations
+										being held at their
+										restaurant. Although the venue had all the necessary amenities for hosting events, visitors rarely
+										chose it for their
+										personal celebrations. This was negatively affecting the restaurant’s revenue and creating the
+										impression that it wasn’t
+										a popular spot for special occasions.</p>
+								</div>
+								<div>
+									<h5>WE SOLVED THIS THANKS TO</h5>
+									<p>We proposed a strategy focused on making the restaurant more attractive for hosting private events.
+										Our team developed a
+										series of initiatives, including the creation of special celebration packages that featured
+										photoshoots with
+										personalized postcards, branded with the restaurant’s logo and customized messages for guests. As a
+										result, the
+										restaurant began to be chosen more frequently for parties, family gatherings, and celebrations.</p>
+								</div>
+								<div class="reviews_img-cont">
+									<img src="./img/reviews/1/1.png">
+									<img src="./img/reviews/1/2.png">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -413,16 +576,19 @@
 							competitors.
 						</p>
 					</div>
-						<div class="services_item">
-							<div class="services_img-cont"><img src="./img/services/s_12.jfif"></div>
-							<h3 class="services_item-title">Food Photography</h3>
-							<p class="services_item-desc">
-								We create mouth-watering and aesthetically pleasing photos of your dishes, perfect for menus, ads, and social media.
-								Each shot highlights the textures, colors, and uniqueness of your food, attracting guests even before they place their
-								first order. With our professional photography, you'll stand out from the competition and increase interest in your
-								cuisine.
-							</p>
-						</div>
+					<div class="services_item">
+						<div class="services_img-cont"><img src="./img/services/s_12.jfif"></div>
+						<h3 class="services_item-title">Food Photography</h3>
+						<p class="services_item-desc">
+							We create mouth-watering and aesthetically pleasing photos of your dishes, perfect for menus, ads, and
+							social media.
+							Each shot highlights the textures, colors, and uniqueness of your food, attracting guests even before they
+							place their
+							first order. With our professional photography, you'll stand out from the competition and increase
+							interest in your
+							cuisine.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -493,26 +659,32 @@
 	</div>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
-			loop: true, // Бесконечная прокрутка
+			loop: true,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
 			autoplay: {
-				delay: 5000, // Автосмена слайдов каждые 5 секунд
+				delay: 5000,
+			},
+		});
+		var swiperMain = new Swiper('.swiper_main', {
+			loop: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			autoplay: {
+				delay: 15000,
 			},
 			breakpoints: {
-				320: {  // На экранах до 320px 1 слайд
-					slidesPerView: 1,
-					spaceBetween: 10,
+				// When window width is >= 850px
+				850: {
+					slidesPerView: 2, // Показывать 2 слайда
 				},
-				640: {  // На экранах до 640px 2 слайда
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				1024: {  // На экранах до 1024px 3 слайда
-					slidesPerView: 3,
-					spaceBetween: 30,
+				// When window width is < 850px
+				0: {
+					slidesPerView: 1, // Показывать 1 слайд
 				}
 			}
 		});

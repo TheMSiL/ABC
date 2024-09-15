@@ -22,3 +22,11 @@ header_btn.addEventListener('click', () => {
 close.addEventListener('click', () => {
 	overlay.style.display = 'none';
 });
+
+
+const burgerMenu = document.getElementById('burgerMenu');
+
+burgerMenu.addEventListener('click', () => {
+	burgerMenu.classList.toggle('open');
+	overlay.classList.toggle('show');
+});
