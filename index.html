@@ -27,7 +27,7 @@
 					<ul class="header_ul">
 						<li class="header_li"><a href="#about">about</a> </li>
 						<li class="header_li"><a href="#videography">videography</a> </li>
-						<li class="header_li"><a href="#goals">goals</a> </li>
+						<li class="header_li"><a href="#partners">partners</a> </li>
 						<li class="header_li"><a href="#reviews">reviews</a> </li>
 						<li class="header_li"><a href="#services">Services</a> </li>
 					</ul>
@@ -44,16 +44,16 @@
 			</div>
 		</div>
 
-		<div class="overlay">
+		<div class="overlay-burger">
 			<nav class="header_nav-mob" id="navMenu">
 				<ul class="header_ul">
 					<li class="header_li"><a href="#about">about</a></li>
 					<li class="header_li"><a href="#videography">videography</a></li>
-					<li class="header_li"><a href="#goals">goals</a></li>
+					<li class="header_li"><a href="#partners">partners</a></li>
 					<li class="header_li"><a href="#reviews">reviews</a></li>
 					<li class="header_li"><a href="#services">services</a></li>
 					<div class="header_btns-mob">
-						<button class="header_btn">CONTACT</button>
+						<a href="#contact" class="header_btn-mob">CONTACT</a>
 						<a href="tel:+19547014361" class="header_btn-second">CALL</a>
 					</div>
 				</ul>
@@ -376,7 +376,7 @@
 									restaurant’s popularity to a whole new level!</p>
 							</div>
 							<div class="right_side">
-					
+
 								<div class="request">
 									<h5>THE REQUEST THEY CAME TO US WITH</h5>
 									<p>The client approached us with a problem: a lack of parties, family gatherings, and celebrations
@@ -429,7 +429,7 @@
 									restaurant’s popularity to a whole new level!</p>
 							</div>
 							<div class="right_side">
-					
+
 								<div class="request">
 									<h5>THE REQUEST THEY CAME TO US WITH</h5>
 									<p>The client approached us with a problem: a lack of parties, family gatherings, and celebrations
@@ -593,17 +593,18 @@
 			</div>
 		</section>
 
-		<section class="contacts">
+		<section class="contacts" id="contact">
 			<h2 class="section_title" style="text-align: center;">CONTACT US</h2>
 			<div class="container">
-				<form>
-					<input type="text" placeholder="FIRST NAME">
-					<input type="text" placeholder="LAST NAME">
-					<input type="text" placeholder="PHONE">
-					<input type="email" placeholder="EMAIL">
-					<input type="text" placeholder="WEBSITE">
-					<input type="text" placeholder="RESTAURANT NAME">
-					<input type="text" class="tell_us" placeholder="TELL US MORE">
+				<form action="https://api.web3forms.com/submit" method="POST">
+					<input type="hidden" name="access_key" value="7d9e2fcf-9b46-4431-a37a-127a5070945a">
+					<input type="text" name="first_name" required placeholder="FIRST NAME">
+					<input type="text" name="last_name" required placeholder="LAST NAME">
+					<input type="text" name="phone" required placeholder="PHONE">
+					<input type="email" name="email" required placeholder="EMAIL">
+					<input type="text" name="website" placeholder="WEBSITE">
+					<input type="text" name="restaurant" placeholder="RESTAURANT NAME">
+					<input type="text" name="more" class="tell_us" placeholder="TELL US MORE">
 					<button type="submit">Enquire now</button>
 				</form>
 				<div class="info_contacts">
@@ -641,18 +642,30 @@
 				</div>
 			</div>
 		</footer>
+		<button id="scrollToTopBtn"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
+				xml:space="preserve">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier">
+					<path id="XMLID_224_"
+						d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z">
+					</path>
+				</g>
+			</svg></button>
 
 		<div class="overlay">
 			<span class="close">X</span>
-			<form>
+			<form action="https://api.web3forms.com/submit" method="POST">
 				<h2 class="section_title" style="text-align: center; width: fit-content; margin: 0 auto 25px;">CONTACT US</h2>
-				<input type="text" placeholder="FIRST NAME">
-				<input type="text" placeholder="LAST NAME">
-				<input type="text" placeholder="PHONE">
-				<input type="email" placeholder="EMAIL">
-				<input type="text" placeholder="WEBSITE">
-				<input type="text" placeholder="RESTAURANT NAME">
-				<input type="text" class="tell_us" placeholder="TELL US MORE">
+				<input type="hidden" name="access_key" value="7d9e2fcf-9b46-4431-a37a-127a5070945a">
+				<input type="text" name="first_name" required placeholder="FIRST NAME">
+				<input type="text" name="last_name" required placeholder="LAST NAME">
+				<input type="text" name="phone" required placeholder="PHONE">
+				<input type="email" name="email" required placeholder="EMAIL">
+				<input type="text" name="website" placeholder="WEBSITE">
+				<input type="text" name="restaurant" placeholder="RESTAURANT NAME">
+				<input type="text" name="more" class="tell_us" placeholder="TELL US MORE">
 				<button type="submit">Enquire now</button>
 			</form>
 		</div>

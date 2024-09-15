@@ -23,10 +23,43 @@ close.addEventListener('click', () => {
 	overlay.style.display = 'none';
 });
 
-
 const burgerMenu = document.getElementById('burgerMenu');
+const overlayBurger = document.querySelector('.overlay-burger');
 
 burgerMenu.addEventListener('click', () => {
 	burgerMenu.classList.toggle('open');
-	overlay.classList.toggle('show');
+	overlayBurger.classList.toggle('show');
 });
+
+const links = document.querySelectorAll('.header_li');
+const btnMob = document.querySelector('.header_btn-mob');
+
+links.forEach(link => {
+	link.addEventListener('click', () => {
+		burgerMenu.classList.remove('open');
+		overlayBurger.classList.remove('show');
+	});
+});
+
+btnMob.addEventListener('click', () => {
+	burgerMenu.classList.remove('open');
+	overlayBurger.classList.remove('show');
+});
+
+// Показываем кнопку при прокрутке вниз
+window.onscroll = function () {
+	let btn = document.getElementById('scrollToTopBtn');
+	if (
+		document.body.scrollTop > 100 ||
+		document.documentElement.scrollTop > 100
+	) {
+		btn.style.display = 'flex';
+	} else {
+		btn.style.display = 'none';
+	}
+};
+
+// Прокручиваем страницу наверх при клике на кнопку
+document.getElementById('scrollToTopBtn').onclick = function () {
+	window.scrollTo({ top: 0, behavior: 'smooth' });
+};
