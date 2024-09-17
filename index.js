@@ -49,13 +49,16 @@ btnMob.addEventListener('click', () => {
 // Показываем кнопку при прокрутке вниз
 window.onscroll = function () {
 	let btn = document.getElementById('scrollToTopBtn');
+	let btn1 = document.getElementById('openFormBTN');
 	if (
 		document.body.scrollTop > 100 ||
 		document.documentElement.scrollTop > 100
 	) {
 		btn.style.display = 'flex';
+		btn1.style.display = 'flex';
 	} else {
 		btn.style.display = 'none';
+		btn1.style.display = 'none';
 	}
 };
 
@@ -63,3 +66,28 @@ window.onscroll = function () {
 document.getElementById('scrollToTopBtn').onclick = function () {
 	window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+
+const sliderWrapper = document.querySelector('.slider-wrapper');
+const slides = document.querySelectorAll('.slider-item');
+let currentSlide = 0;
+const totalSlides = slides.length;
+
+function showNextSlide() {
+	currentSlide = (currentSlide + 1) % totalSlides; // Переход к следующему слайду
+	sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`; // Сдвиг слайдов
+}
+
+// Автоматическое переключение каждые 3 секунды
+setInterval(showNextSlide, 10000);
+
+const overlayBTN = document.querySelector('.overlay_btn');
+const openFormBTN = document.getElementById('openFormBTN');
+const closeFormBTN = document.querySelector('.close_formBTN');
+
+openFormBTN.addEventListener('click', () => {
+	overlayBTN.style.display = 'flex';
+});
+
+closeFormBTN.addEventListener('click', () => {
+	overlayBTN.style.display = 'none';
+});
